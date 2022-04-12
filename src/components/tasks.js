@@ -1,5 +1,8 @@
 import React, {Component}from 'react';
-import Task from "./task";
+import Task from "./Task";
+
+
+
 
 class Tasks extends Component{
     render(){
@@ -9,5 +12,6 @@ class Tasks extends Component{
         ))
     }
 }
+
 
 export default Tasks;
