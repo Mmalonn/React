@@ -7,8 +7,13 @@ import Task from "./Task";
 class Tasks extends Component{
     render(){
         return (
-        this.props.tasks.map(e=> <Task task={e} key={e.id}/>
-                
+        this.props.tasks.map(e=> 
+        <Task 
+        task={e} 
+        key={e.id}
+        deleteTask={this.props.deleteTask}
+        checkDone={this.props.checkDone}
+        />        
         ))
     }
 }
